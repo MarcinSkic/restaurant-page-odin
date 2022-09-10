@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+:root {
+    --main-background-color: #1a99d4;
+}
+
+html {
+    background-image: url("./subnauticaBackground.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Days One', sans-serif;
+}
+
+.logo {
+    background: no-repeat left/7.5rem linear-gradient(#ee8601,#f8d876),
+            no-repeat 7.5rem/14rem linear-gradient(#85c5e2,#d7e8f6);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    -webkit-text-stroke: 0.3px black;
+}
+
+header {
+    background-color: #1a99d4d3;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    margin-right: 60px;
+
+    min-width: 22rem;
+}
+
+nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+nav button {
+    flex: 1;
+    max-width: 250px;
+
+    color: white;
+    background:  radial-gradient(#064b8b,var(--main-background-color));
+
+    border-radius: 10px;
+    border: 2px solid #4ab4e6;
+}
+
+nav button:hover {
+    border: 2px solid #f3c53b;
+}
+
+nav button:active,
+nav button.active {
+    background:  radial-gradient(#f1b500,#ffe868);
+}
