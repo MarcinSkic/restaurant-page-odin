@@ -1,5 +1,8 @@
 import 'normalize.css';
 import "./main.css";
 
+import homePage from './homePage.js';
 
-console.log("heja");
+const contentDiv = document.querySelector('div#content');
+
+//homePage.generatePage(contentDiv);
