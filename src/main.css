@@ -87,3 +87,17 @@ main {
 
     border-radius: 20px;
 }
+
+#content .gallery{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-rows: max-content;
+    gap: 10px;
+}
+
+#content .gallery > img {
+    width: 100%;
+    height: auto;
+    /*background: center / contain no-repeat ;*/
+}
