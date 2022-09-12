@@ -3,8 +3,10 @@ export default (function(){
     const images = path.keys().map(path);
 
     function generatePage(contentDiv){
+        const containerDiv = document.createElement('div');
+        containerDiv.classList.add('page');
 
-        contentDiv.innerHTML = `<h2>Location</h2>
+        containerDiv.innerHTML = `<h2>Location</h2>
         <div class="gallery">
 
         </div>
@@ -20,7 +22,7 @@ export default (function(){
             Kharaa bacteria outbreak. 
         </div>`
 
-        const gallery = contentDiv.querySelector('.gallery');
+        const gallery = containerDiv.querySelector('.gallery');
 
         images.forEach(image => {
             const img = document.createElement('img');
@@ -28,6 +30,7 @@ export default (function(){
             gallery.append(img);
         })
 
+        return containerDiv;
     }
 
     return {generatePage};
