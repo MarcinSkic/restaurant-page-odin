@@ -1,0 +1,22 @@
+{
+    "appetisers": [
+        {
+            "title": "Peeper",
+            "description": "Local commonly found fish marinated in salt, served with kelp and mushrooms",
+            "price": 10.99
+        }
+    ],
+
+    "mainCourses": [
+        {
+            "title": "Sea emperor ambrosia",
+            "description": "Rumored to greatly boost your immune system, this is salad made from finest plants this planet has to offer, including exceptional \"Sea Crown\"",
+            "price": 50.99,
+            "vegatarian": true
+        }
+    ],
+
+    "desserts": [
+
+    ]
+}

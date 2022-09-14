@@ -28,8 +28,6 @@ function changePage(generatedPage){
         contactButton.classList.remove('active');
     })();
 
-    console.log(generatedPage);
-
     contentDiv.innerHTML = "";
     contentDiv.append(generatedPage);
     this.classList.add('active');

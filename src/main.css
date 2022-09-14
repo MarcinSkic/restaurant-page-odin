@@ -96,11 +96,15 @@ main {
     gap: 10px;
 }
 
-#content .gallery > img {
+#content img {
     width: 100%;
     height: auto;
     /*background: center / contain no-repeat ;*/
 
     border-radius: 10px;
     border: 2px solid #06cbeef1;
+}
+
+#content h2 {
+    text-align: center;
 }
