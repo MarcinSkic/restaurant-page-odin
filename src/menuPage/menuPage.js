@@ -7,22 +7,46 @@ export default (function(){
     function generatePage(){
         const container = document.createElement('div');
         container.classList.add('page');
+        container.classList.add('menu');
 
-        const header = document.createElement('h2');
-        header.textContent = "Appetisers"
-        container.append(header);
+
+        const appetisersHeader = document.createElement('h2');
+        appetisersHeader.textContent = "Appetisers"
+
+        const appetisersCont = document.createElement('div');
+        appetisersCont.classList.add('dishes');
 
         menuData.appetisers.forEach(dish => {
-            container.append(generateDish(dish));
+            appetisersCont.append(generateDish(dish));
         });
+
+        container.append(appetisersHeader,appetisersCont);
+
+
+        const mainCoursesHeader = document.createElement('h2');
+        mainCoursesHeader.textContent = "Main Courses";
+
+        const mainCoursesCont = document.createElement('div');
+        mainCoursesCont.classList.add('dishes');
 
         menuData.mainCourses.forEach(dish => {
-            container.append(generateDish(dish));
+            mainCoursesCont.append(generateDish(dish));
         });
 
+        container.append(mainCoursesHeader,mainCoursesCont);
+
+
+        const dessertsHeader = document.createElement('h2');
+        dessertsHeader.textContent = "Desserts";
+        
+        const dessertsCont = document.createElement('div');
+        dessertsCont.classList.add('dishes');
+
         menuData.desserts.forEach(dish => {
-            container.append(generateDish(dish));
+            dessertsCont.append(generateDish(dish));
         });
+
+        container.append(dessertsHeader,dessertsCont);
 
 
         return container;
@@ -34,6 +58,7 @@ export default (function(){
 
         const title = document.createElement('h3');
         title.textContent = dish.title;
+        title.style.gridArea = "title"
 
         const image = document.createElement('img');
 
@@ -56,6 +81,8 @@ export default (function(){
 
         const price = document.createElement('div');
         price.textContent = `${dish.price} Ac`;
+        price.style.gridArea = "price";
+        price.style.textAlign = "right";
 
         container.append(title,image,description,price);
 

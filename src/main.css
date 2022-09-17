@@ -74,18 +74,26 @@ main {
 
 #content {
     margin: 20px 0;
-    padding: 0 20px 20px;
-
-    max-width: min(70%,1000px);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     color: white;
-    background-color: var(--main-background-color);
+}
+
+#content h2 {
+    text-align: center;
+}
+
+#content .home.page {
+    padding: 0 20px 20px;
+
+    max-width: min(70%,1000px);
 
     border-radius: 20px;
+
+    background-color: #1a99d4d3;
 }
 
 #content .gallery{
@@ -105,6 +113,49 @@ main {
     border: 2px solid #06cbeef1;
 }
 
-#content h2 {
-    text-align: center;
+#content .menu.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content .menu.page h2 {
+    padding: 5px 10px;
+
+    width: max-content;
+
+    background: radial-gradient(#064b8b,var(--main-background-color));
+    border-radius: 5px;
+    border: 2px solid #4ab4e6;
+}
+
+#content .dish {
+    padding: 10px 30px 10px 10px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: max-content;
+    gap: 10px 20px;
+    grid-template-areas: 
+    "title title"
+    "photo description"
+    ". price";
+
+    background: center/cover radial-gradient(#064b8b,var(--main-background-color));
+
+    border-radius: 10px;
+    border: 2px solid #4ab4e6;
+}
+
+#content .dish h3 {
+    margin: 0;
+}
+
+#content .dishes {
+    margin: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    place-items: center;
+    place-content: center;
 }

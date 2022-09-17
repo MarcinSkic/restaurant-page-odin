@@ -5,6 +5,7 @@ export default (function(){
     function generatePage(contentDiv){
         const containerDiv = document.createElement('div');
         containerDiv.classList.add('page');
+        containerDiv.classList.add('home');
 
         containerDiv.innerHTML = `<h2>Location</h2>
         <div class="gallery">

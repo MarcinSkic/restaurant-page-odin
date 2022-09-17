@@ -2,7 +2,7 @@
     "appetisers": [
         {
             "title": "Peeper",
-            "description": "Local commonly found fish marinated in salt, served with kelp and mushrooms",
+            "description": "Local, commonly found fish marinated in salt, served with kelp and mushrooms",
             "price": 10.99
         }
     ],
@@ -17,6 +17,6 @@
     ],
 
     "desserts": [
-
+        
     ]
 }
