@@ -159,3 +159,13 @@ main {
     place-items: center;
     place-content: center;
 }
+
+#content .contact.page {
+    padding: 0 20px 20px;
+
+    max-width: min(50%,1000px);
+
+    border-radius: 20px;
+
+    background-color: #1a99d4d3;
+}

@@ -2,7 +2,7 @@ export default (function(){
     const path = require.context('./gallery',false,/location([0-9]|[1-9][0-9])\.jpg$/i);
     const images = path.keys().map(path);
 
-    function generatePage(contentDiv){
+    function generatePage(){
         const containerDiv = document.createElement('div');
         containerDiv.classList.add('page');
         containerDiv.classList.add('home');
