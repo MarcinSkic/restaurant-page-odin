@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+:root {
+    --main-background-color: #1a99d4d3;
+    --blue-gradient: radial-gradient(#064b8b,#1a99d4);
+    --yellow-gradient: radial-gradient(#e09200,#ffe868);
+}
+
+html {
+    background-image: url("./subnauticaBackground.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Days One', sans-serif;
+}
+
+.logo {
+    background: no-repeat left/7.5rem linear-gradient(#ee7f01,#f8d876),
+            no-repeat 7.5rem/14rem linear-gradient(#85c5e2,#d7e8f6);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    -webkit-text-stroke: 0.3px black;
+}
+
+header {
+    background-color: var(--main-background-color);
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+
+    h1 {
+        margin: 0;
+        margin-right: 60px;
+    
+        min-width: 22rem;
+    }
+}
+
+nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+
+    button {
+        flex: 1;
+        max-width: 250px;
+    
+        color: white;
+        background:  var(--blue-gradient);
+    
+        border-radius: 10px;
+        border: 2px solid #4ab4e6;
+
+        
+    }
+
+    button:hover {
+        border: 2px solid #ffe868;
+    }
+
+    button:active,
+    button.active {
+        background: var(--yellow-gradient);
+    }
+
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+#content {
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    width: 100%;
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        /*background: center / contain no-repeat ;*/
+    
+        border-radius: 10px;
+        border: 2px solid #06cbeef1;
+    }
+
+    .home.page {
+        padding: 0 20px 20px;
+    
+        max-width: min(70%,1000px);
+    
+        border-radius: 20px;
+    
+        background-color: var(--main-background-color);
+
+        .gallery{
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-auto-rows: max-content;
+            gap: 10px;
+        }
+    }
+
+    .menu.page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            padding: 5px 10px;
+        
+            width: max-content;
+        
+            background: var(--blue-gradient);
+            border-radius: 5px;
+            border: 2px solid #4ab4e6;
+        }
+
+        .dishes {
+            margin: 30px;
+        
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+            place-items: center;
+            place-content: center;
+
+            .dish {
+                padding: 10px 30px 10px 10px;
+            
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-auto-rows: max-content;
+                gap: 10px 20px;
+                grid-template-areas: 
+                "title title"
+                "photo description"
+                ". price";
+            
+                background: center/cover var(--blue-gradient);
+            
+                border-radius: 10px;
+                border: 2px solid #4ab4e6;
+    
+                h3 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .contact.page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding: 0 20px 20px;
+    
+        max-width: min(50%,1000px);
+    
+        border-radius: 20px;
+    
+        background-color: var(--main-background-color);
+
+        h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .info-box {
+            padding: 5px;
+            text-align: center;
+        
+            background: var(--blue-gradient);
+            border-radius: 10px;
+            border: 2px solid #4ab4e6;
+        
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer {
+            font-size: 0.5rem;
+            text-align: center;
+        }
+    }
+}
+

@@ -1,5 +1,5 @@
 import 'normalize.css';
-import "./main.css";
+import "./main.scss";
 
 import homePage from './homePage/homePage.js';
 import menuPage from './menuPage/menuPage.js';
