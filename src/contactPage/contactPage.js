@@ -5,12 +5,36 @@ export default (function() {
         containerDiv.classList.add('contact');
 
         containerDiv.innerHTML = `<h2>Address</h2>
-        <div class="description">
-            Only dining option is booking visit ahead of time, for minor price of 10 000 Alterra Credits. 
-            For this price you get one in a lifetime meal experience (underwater transport included).
-            Estimated wait time currently is around 8 months. Alterra reserves right to cancel any reservation in case of
-            Kharaa bacteria outbreak. 
-        </div>`
+        <div class="info-box">
+            <div>Star Cluster: Ariadne Arm</div>
+            <div>Star: 4546</div>
+            <div>Planet: 4546B</div>
+            <div>Sector: the Crater</div>
+            <div>Coordinates: 0 0</div>
+        </div>
+        <h2>Call Us!</h2>
+        <div class="info-box">
+            <h3>Alterra Department of Recreation</h3>
+            #440 +32 999 999 000
+        </div>
+        <div class="info-box">
+            <h3>Alterra Department of Food and Drugs</h3>
+            #440 +33 999 999 000
+        </div>
+        <div class="info-box">
+            <h3>Alterra Department of Intersystems Travel</h3>
+            #440 +15 999 999 000
+        </div>
+        <div class="info-box">
+            <h3>Alterra Department of Alien Diseases</h3>
+            #440 +25 999 999 000
+        </div>
+        <div class="info-box">
+            <h3>Alterra Headquarters</h3>
+            #440 +00 999 999 000
+        </div>
+        <div class="disclaimer">Standard contact fee aplies, 500 Ac for every minute on line. Company 
+        keeps right to charge extra for unnecessary waste of time or resources</div>`
         return containerDiv;
     }
 
