@@ -9,6 +9,8 @@ Website theme is inspired by computer game [Subnautica](https://store.steampower
 ### Used technologies
 [<img align="left" alt="JS" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />][js]
 [<img align="left" alt="SCSS" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" style="padding-right:10px;"/>][sass]
+[<img align="left" alt="webpack" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" style="padding-right:10px;"/>][webpack]
 
 [sass]: https://sass-lang.com
 [js]: https://en.wikipedia.org/wiki/JavaScript
+[webpack]: https://webpack.js.org
